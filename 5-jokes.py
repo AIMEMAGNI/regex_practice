@@ -5,9 +5,7 @@ jokes = ['Why did the tree fall down ? Because of the wind',
           '[Verse X] everything is alright',
           ]
 
-regex = '\w+\s\w+\s\?\s\w+'
-
-regex = '\w+\s\w+\s\?\s\w+'
+regex = '^(Why did the .+\?)\s(Because .+)'
 
 for joke in jokes:
     match = re.search(regex, joke)
